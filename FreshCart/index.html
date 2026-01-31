@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FreshCart Clone</title>
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- =================== HEADER =================== -->
+  <header class="bg-white border-b">
+
+    <!-- Top Row -->
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <!-- Logo -->
+      <h1 class="text-2xl font-bold text-green-600">
+        FreshCart
+      </h1>
+
+      <!-- Search -->
+      <div class="hidden lg:flex w-[500px] border rounded-lg overflow-hidden">
+
+        <input type="text" placeholder="Search for products..."
+          class="w-full px-4 py-2 outline-none text-sm" />
+
+        <button class="bg-green-600 px-5 text-white text-sm">
+          Search
+        </button>
+      </div>
+
+      <!-- Icons -->
+      <div class="flex gap-5 text-gray-600 text-lg">
+        <span>❤️</span>
+        <span>👤</span>
+        <span>🛒</span>
+      </div>
+    </div>
+
+    <!-- Navbar Row -->
+    <div class="max-w-7xl mx-auto px-6 flex items-center gap-6 py-3">
+
+      <!-- Department Button -->
+      <button
+        class="bg-green-600 text-white px-5 py-2 rounded-lg text-sm font-medium flex items-center gap-2">
+        ☰ All Departments
+      </button>
+
+      <!-- Links -->
+      <nav class="flex gap-6 text-sm font-medium text-gray-700">
+        <a href="#" class="text-green-600">Home</a>
+        <a href="#">Dropdown Menu</a>
+        <a href="#">Mega menu</a>
+        <a href="#">Dashboard</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =================== HERO SECTION =================== -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <div
+      class="bg-gray-100 rounded-2xl overflow-hidden flex flex-col md:flex-row items-center justify-between">
+
+      <!-- Text -->
+      <div class="p-10 max-w-xl">
+        <span class="bg-yellow-200 text-xs px-3 py-1 rounded-full">
+          Free Shipping - orders over $100
+        </span>
+
+        <h2 class="mt-5 text-4xl font-bold leading-snug">
+          Free Shipping on <br />
+          orders over <span class="text-green-600">$100</span>
+        </h2>
+
+        <p class="mt-4 text-gray-600 text-sm">
+          Free Shipping to First-Time Customers Only, After promotions and discounts are applied.
+        </p>
+
+        <button class="mt-6 bg-gray-900 text-white px-6 py-3 rounded-lg text-sm">
+          Shop Now →
+        </button>
+      </div>
+
+      <!-- Hero Image -->
+      <div class="p-6">
+        <img src="vegetable.jpg"
+          class="w-[1800px]" />
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================== FEATURED CATEGORIES =================== -->
+  <section class="max-w-7xl mx-auto px-6 py-4">
+    <h3 class="font-semibold text-lg mb-4">
+      Featured Categories
+    </h3>
+
+    <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
+
+      <!-- Category Card -->
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-tea-coffee-drinks.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Daily, Bread & Eggs</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-atta-rice-dal.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Snack & Munchies</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-baby-care.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Bakery & Biscuits</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-chicken-meat-fish.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Instant Food</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-cleaning-essentials.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Tea, Coffee & Drinks</p>
+      </div>
+
+      <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+        <img src="https://themewagon.github.io/freshcart/assets/images/category/category-pet-care.jpg" class="w-12 mx-auto" />
+        <p class="text-xs mt-2">Atta, Rice & Dal</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =================== PROMO BANNERS =================== -->
+  <section class="max-w-7xl mx-auto px-6 py-8 grid md:grid-cols-2 gap-6">
+
+    <!-- Promo 1 -->
+    <div class="bg-gray-100 rounded-2xl p-6 flex justify-between items-center">
+      <div>
+        <h3 class="font-bold text-lg">Fruits & Vegetables</h3>
+        <p class="text-sm text-gray-600 mt-2">Get Upto 30% Off</p>
+        <button class="mt-4 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm">
+          Shop Now
+        </button>
+      </div>
+      <img src="bag.jpg" class="w-32" />
+    </div>
+
+    <!-- Promo 2 -->
+    <div class="bg-gray-100 rounded-2xl p-6 flex justify-between items-center">
+      <div>
+        <h3 class="font-bold text-lg">Freshly Baked Buns</h3>
+        <p class="text-sm text-gray-600 mt-2">Get Upto 25% Off</p>
+        <button class="mt-4 bg-gray-900 text-white px-4 py-2 rounded-lg text-sm">
+          Shop Now
+        </button>
+      </div>
+      <img src="bread.jfif" class="w-32" />
+    </div>
+
+  </section>
+
+  
+  <!-- =================== DAILY BEST SELLS =================== -->
+  <section class="max-w-7xl mx-auto px-6 py-8">
+    <h3 class="font-semibold text-lg mb-6">
+      Daily Best Sells
+    </h3>
+
+    <div class="grid md:grid-cols-4 gap-6">
+
+      <!-- Left Big Banner -->
+      <div class="bg-black text-white rounded-2xl p-6 flex flex-col justify-between">
+        <h4 class="font-bold text-xl">
+          100% Organic <br /> Coffee Beans.
+        </h4>
+
+        <button class="mt-6 bg-green-600 px-4 py-2 rounded-lg text-sm">
+          Shop Now →
+        </button>
+
+        <img src="Cafe.jfif"
+          class="mt-6 w-32 mx-auto" />
+      </div>
+
+      <!-- Product Cards -->
+      <div class="bg-white border rounded-2xl p-4 text-center">
+        <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-11.jpg" class="w-24 mx-auto" />
+        <h4 class="mt-3 text-sm font-semibold">Nutrichoice Digestive</h4>
+        <p class="text-xs text-gray-500">Bakery & Biscuits</p>
+        <p class="mt-2 font-bold text-green-600">$18</p>
+        <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+          + Add
+        </button>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-4 text-center">
+        <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-12.jpg" class="w-24 mx-auto" />
+        <h4 class="mt-3 text-sm font-semibold">Cadbury 5 Star Chocolate</h4>
+        <p class="text-xs text-gray-500">Snacks</p>
+        <p class="mt-2 font-bold text-green-600">$12</p>
+        <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+          + Add
+        </button>
+      </div>
+
+      <div class="bg-white border rounded-2xl p-4 text-center">
+        <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-13.jpg" class="w-24 mx-auto" />
+        <h4 class="mt-3 text-sm font-semibold">Onion Flavour Chips</h4>
+        <p class="text-xs text-gray-500">Snack & Munchies</p>
+        <p class="mt-2 font-bold text-green-600">$10</p>
+        <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+          + Add
+        </button>
+      </div>
+
+    </div>
+  </section>
+<!-- =================== POPULAR PRODUCTS =================== -->
+<section class="max-w-7xl mx-auto px-6 py-10">
+  <h3 class="font-semibold text-lg mb-6">
+    Popular Products
+  </h3>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-5 gap-6">
+
+    <!-- Product -->
+    <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+      <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-1.jpg" class="w-20 mx-auto" />
+      <h4 class="mt-3 text-sm font-semibold">Haldiram's Sev Bhujia</h4>
+      <p class="text-xs text-gray-500">Snack & Munchies</p>
+
+      <p class="mt-2 font-bold text-green-600">$24</p>
+
+      <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+        + Add
+      </button>
+    </div>
+
+    <!-- Product -->
+    <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+      <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-2.jpg" class="w-20 mx-auto" />
+      <h4 class="mt-3 text-sm font-semibold">Nutrichoice Digestive</h4>
+      <p class="text-xs text-gray-500">Bakery & Biscuits</p>
+
+      <p class="mt-2 font-bold text-green-600">$18</p>
+
+      <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+        + Add
+      </button>
+    </div>
+
+    <!-- Product -->
+    <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+      <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-3.jpg" class="w-20 mx-auto" />
+      <h4 class="mt-3 text-sm font-semibold">Cadbury 5 Star Chocolate</h4>
+      <p class="text-xs text-gray-500">Snacks</p>
+
+      <p class="mt-2 font-bold text-green-600">$12</p>
+
+      <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+        + Add
+      </button>
+    </div>
+
+    <!-- Product -->
+    <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+      <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-4.jpg" class="w-20 mx-auto" />
+      <h4 class="mt-3 text-sm font-semibold">Onion Flavour Chips</h4>
+      <p class="text-xs text-gray-500">Snack & Munchies</p>
+
+      <p class="mt-2 font-bold text-green-600">$10</p>
+
+      <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+        + Add
+      </button>
+    </div>
+
+    <!-- Product -->
+    <div class="bg-white border rounded-xl p-4 text-center hover:shadow">
+      <img src="https://themewagon.github.io/freshcart/assets/images/products/product-img-6.jpg" class="w-20 mx-auto" />
+      <h4 class="mt-3 text-sm font-semibold">Fresh Fruits Pack</h4>
+      <p class="text-xs text-gray-500">Fruits</p>
+
+      <p class="mt-2 font-bold text-green-600">$15</p>
+
+      <button class="mt-3 w-full bg-green-600 text-white py-2 rounded-lg text-sm">
+        + Add
+      </button>
+    </div>
+
+  </div>
+</section>
+
+ <!-- =================== FOOTER =================== -->
+<footer class="bg-white border-t mt-12">
+
+  <!-- Footer Links -->
+  <div class="max-w-7xl mx-auto px-6 py-12 grid md:grid-cols-5 gap-10 text-sm">
+
+    <div>
+      <h4 class="font-semibold mb-3">Categories</h4>
+      <p>Vegetables & Fruits</p>
+      <p>Dairy & Breakfast</p>
+      <p>Snack & Munchies</p>
+      <p>Beverages</p>
+      <p>Instant Food</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">Get to know us</h4>
+      <p>Company</p>
+      <p>About</p>
+      <p>Blog</p>
+      <p>Help Center</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">For Consumers</h4>
+      <p>Payments</p>
+      <p>Shipping</p>
+      <p>Returns</p>
+      <p>FAQ</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">Become a Shopper</h4>
+      <p>Shopper Opportunities</p>
+      <p>Careers</p>
+      <p>Store Locations</p>
+    </div>
+
+    <div>
+      <h4 class="font-semibold mb-3">FreshCart Programs</h4>
+      <p>Gift Cards</p>
+      <p>Promos</p>
+      <p>Affiliate</p>
+    </div>
+
+  </div>
+
+  <!-- Bottom Payment + Apps Row -->
+  <div class="border-t py-6">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+
+      <!-- Payment Partners -->
+      <div class="text-sm text-gray-600 flex gap-4 items-center">
+        <span class="font-medium">Payment Partners:</span>
+        <img src="https://themewagon.github.io/freshcart/assets/images/payment/amazonpay.svg" class="w-10" />
+        <img src="https://themewagon.github.io/freshcart/assets/images/payment/paypal.svg" class="w-10" />
+        <img src="https://themewagon.github.io/freshcart/assets/images/payment/visa.svg" class="w-10" />
+      </div>
+
+      <!-- App Download -->
+      <div class="flex gap-3">
+        <img src="https://themewagon.github.io/freshcart/assets/images/appbutton/appstore-btn.svg" class="w-28" />
+        <img src="https://themewagon.github.io/freshcart/assets/images/appbutton/googleplay-btn.svg" class="w-28" />
+      </div>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-xs text-gray-500 py-4 border-t">
+    © 2026 FreshCart Clone — All Rights Reserved
+  </div>
+
+</footer>
